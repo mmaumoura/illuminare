@@ -1,0 +1,26 @@
+/* ============================================================
+   Tabler Core
+   ============================================================ */
+@import "@tabler/core/dist/css/tabler.min.css";
+@import "@tabler/core/dist/css/tabler-vendors.min.css";
+
+/* ============================================================
+   Identidade Visual - Cor primária: #A8851E (padrão de marca)
+   Estes valores são o fallback. O JS de tema sobrescreve via
+   document.documentElement.style.setProperty() em tempo real.
+   ============================================================ */
+/*
+   :root garante o padrão de marca para a maior parte do documento.
+   [data-bs-theme=light] garante que elementos filhos com esse atributo
+   também usem a cor de marca como fallback (antes de qualquer override do usuário).
+   O inline style no <html> feito pelo servidor/JS tem prioridade máxima (1,0,0,0).
+*/
+:root,
+[data-bs-theme=light] {
+    --tblr-primary:         #A8851E;
+    --tblr-primary-rgb:     168, 133, 30;
+    --tblr-primary-lt:      rgba(168, 133, 30, .1);
+    --tblr-link-color:      #A8851E;
+    --tblr-link-hover-color: #8a6c18;
+}
+
